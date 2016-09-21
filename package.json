@@ -7,13 +7,16 @@
     "start": "node src/index | bunyan",
     "watch": "nodemon src/index | bunyan",
     "lint": "eslint src/**/*.js",
-    "test": "mocha spec/*.spec.js"
+    "test": "mocha spec/*.spec.js spec/**/*.spec.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bunyan": "^1.8.1",
-    "hapi": "^15.0.3"
+    "hapi": "^15.0.3",
+    "hapi-swagger": "^7.2.0",
+    "inert": "^4.0.2",
+    "vision": "^4.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

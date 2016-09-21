@@ -2,6 +2,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const server = require('./../src/index');
 const persons = require('./../res/persons')
+const events = require('./../res/events')
 
 describe('Server', () => {
     describe('/', () => {
@@ -22,7 +23,19 @@ describe('Server', () => {
                 });
             });
         });
-    });
+    })
+
+	describe('/events', () => {
+		describe('GET', () => {
+			it('should return a list of events', (done) => {
+				server.inject('/events', (res) => {
+					expect(res.result).to.deep.equal(events);
+					done();
+				});
+			});
+		});
+	})
+
 
 })
 
