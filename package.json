@@ -1,0 +1,29 @@
+{
+  "name": "octo-event-api",
+  "version": "1.0.0",
+  "description": "api de gestion d'evenement TP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index | bunyan",
+    "watch": "nodemon src/index | bunyan",
+    "lint": "eslint src/**/*.js",
+    "test": "mocha spec/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.1",
+    "hapi": "^15.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "eslint-config-standard": "^6.0.1",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  }
+}
