@@ -7,7 +7,7 @@
     "start": "node src/index | bunyan",
     "watch": "nodemon src/index | bunyan",
     "lint": "eslint src/**/*.js",
-    "test": "mocha spec/*.spec.js spec/**/*.spec.js"
+    "test": "mocha src/*.spec.js src/**/*.spec.js"
   },
   "author": "",
   "license": "ISC",

@@ -24,9 +24,7 @@ module.exports = [
 		method: 'GET',
 		path: '/persons/{id}',
 		config: {
-			handler: (request, reply) => {
-				handlersPersons.getPersonById(request.params.id, reply)
-			},
+			handler: handlersPersons.getPersonById,
 			tags: ['api'],
 			validate: {
 				params: {

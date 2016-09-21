@@ -1,18 +1,15 @@
-const persons = require('./../../../res/persons')
+const servicePersons = require('./servicePersons')
 
 module.exports.getAllPersons = function(request, reply) {
-	reply(persons);
+	reply(servicePersons.getAllPersons());
 }
 
-module.exports.getPersonById = function (id, reply) {
+module.exports.getPersonById = function (request, reply) {
 
-	const person = persons.filter(function (p){
-		return (p.id == id)
-	})
+	const person = servicePersons.getPersonById(request.params.id);
 
 	if (!person.length) {
 		return reply().code(404)
 	}
-
 	reply(person[0])
 }

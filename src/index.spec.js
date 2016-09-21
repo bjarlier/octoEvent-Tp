@@ -1,6 +1,6 @@
 const chai = require('chai');
 const expect = chai.expect;
-const server = require('./../src/index');
+const server = require('./index');
 const persons = require('./../res/persons')
 const events = require('./../res/events')
 
