@@ -10,7 +10,7 @@ const persons = require('../../../res/persons.json');
 
 describe('handlersPersons', () => {
 	describe('.getAllPersons()', () => {
-		it('should return list of persons' , () => {
+		it('should return list of persons', () => {
 
 			var personList = servicePersons.getAllPersons();
 
@@ -19,7 +19,7 @@ describe('handlersPersons', () => {
 	})
 
 	describe('.getPersonById()', () => {
-		it('should return a persons' , () => {
+		it('should return a persons', () => {
 
 			var personTest = servicePersons.getPersonById(10);
 
